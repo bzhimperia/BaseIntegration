@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <h1>Formulaire d'inscription au voyage</h1>
+    <form id="monFormulaire" action="traitement.php" method="post">
+        <fieldset>
+            <legend>Informations Personnelles</legend>
+        <label for="pseudo">Pseudo :</label>
+        <input type="text" id="pseudo" name="pseudo" required>
+    
+        <label for="motDePasse">Mot de passe :</label>
+        <input type="password" id="motDePasse" name="motDePasse" required>
+    
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="photo">Photo :</label>
+        <input type="file" id="photo" name="photo" accept="image/*">
+    </fieldset>
+    <fieldset>
+        <legend>Préférences de voyage</legend>
+        <label for="destinations[]">Destinations :</label>
+        
+            <input type="checkbox" id="destination1" name="destinations[]" value="Destination 1">
+            <label for="destination1">Destination 1</label>
+    
+            <input type="checkbox" id="destination2" name="destinations[]" value="Destination 2">
+            <label for="destination2">Destination 2</label>
+    
+        </fieldset>
+    
+        <fieldset>      
+            <legend>Autre</legend>
+        <label for="commentaire">Commentaire :</label>
+        <textarea id="commentaire" name="commentaire" rows="4"></textarea>
+    </fieldset>  
+        <button type="submit">Soumettre</button>
+        <button type="button" class="cancel">Annuler</button>
+       
+    </form>
+    
+</body>
+</html>
