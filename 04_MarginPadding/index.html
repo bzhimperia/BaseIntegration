@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .zoneA {
+            border : 1px solid;
+            background-color: lightblue;
+            /* margin : 50px; */
+            /* margin:50px 60px 150px 20px; */
+            margin-bottom:50px
+        }
+
+        .zoneB {
+            border : 1px solid;
+            background-color: lightblue;
+            padding:50px
+        }
+
+/* Attention a la fusion des marges, en mettant 50px de margin bottom sur zone a et 50 px de margin top sur la zone b , il y a fusion, je n'obtiens pas 100 px de marges mais 50  */
+    </style>
+</head>
+<body>
+    
+    <div class="zoneA">Je test les margins</div>
+    <div class="zoneB">Je test les padding</div>
+
+</body>
+</html>

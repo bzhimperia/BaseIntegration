@@ -1,0 +1,29 @@
+/* Notion de cascade
+Ordre croissant de priorité (de la plus basse à la plus haute)
+1- proriété du navigateur
+2- Les feuilles styles externes
+3- feuilles de styles interne 
+4- les styles intégrés aux balises */
+
+body {
+    background-color:pink;
+}
+
+nav {
+    background-color: blue;
+    height: 100px;
+}
+
+nav, footer {
+    background-color: violet;
+}
+
+.jaune {
+    background-color: gold;
+}
+
+#noir {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}

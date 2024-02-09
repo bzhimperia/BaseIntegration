@@ -1,0 +1,88 @@
+.container{
+    width:90%;
+    margin:auto;
+}
+
+/*Header*/
+header a{
+    letter-spacing : 5px;
+    color:grey;
+    text-decoration: none;
+    margin-left:1rem;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    padding : 1rem 0;
+    
+}
+header nav ul{
+    display: flex
+}
+header nav ul li,
+header a{
+    margin-right:1rem;
+    color:grey
+}
+nav ul li:hover,
+header a:hover {
+    color:black;
+}
+
+/*Presentation*/
+h2{
+    font-size: 1.6rem;
+    margin-top:1rem;
+    
+}
+h3{
+    font-size: 1.4rem;
+    font-weight:bold
+}
+.presentation{
+    background-image: url('img/building.jpg');
+    height : 30vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color:white;
+    font-size:3rem;
+    font-weight:bold
+}
+
+.fondateurs{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom:3rem;
+    border-top : 1px solid black;
+    margin-top:1rem;
+    padding-top:1rem;
+
+}
+.fondateurs article{
+    width : 25%;
+}
+button{
+    background-color: #88858580;
+    border:0px;
+    width:100%;
+    padding:0.3em 0.2em;
+}
+
+footer{
+    background-color: #88858580;
+    display:flex;
+    justify-content: center;
+    padding:2rem 0;
+}
+
+footer p{
+    color:white;
+}
