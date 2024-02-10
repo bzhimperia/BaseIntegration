@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .item{
+            border: 1px solid;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* grid-template-columns: repeat(3, 1fr); */
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- Le CSS Grid est une technique de mise en page bidimensionnelle qui permet de positionner des éléments dans des colonnes et des lignes. Cette méthode est particulièrement utile pour créer des designs complexes et responsives.
+
+Pour utiliser le CSS Grid, vous devez définir un conteneur parent en tant que grille (grid) et ses enfants en tant qu'éléments de grille (grid items). -->
+<!-- Il n'y a pas de limite stricte quant au nombre de fractions (fr) que vous pouvez utiliser dans une grille CSS. La limite dépend principalement des contraintes de performance du navigateur et des besoins de votre design.-->
+
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+
+</body>
+</html>

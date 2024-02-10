@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+nav{
+    background-color: aqua;
+    color:white;
+    text-align: center;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+
+}
+
+#zone{
+    border : 2px solid red;
+}
+.vert{
+    position:absolute;
+    color:blue;
+    top:50%;
+    left:0;
+}
+
+.red{
+    color:red;
+    position:relative;
+    top:100px;
+    left:450px;
+}
