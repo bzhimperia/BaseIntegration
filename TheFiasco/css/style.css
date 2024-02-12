@@ -1,0 +1,255 @@
+/*GENERALITIES*/
+section {
+  margin-top: 30px;
+}
+.btn {
+  color: #c89446;
+}
+p {
+  color: #6f6f6f;
+  line-height: 1.3rem;
+}
+.pinyon-script-regular {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.container {
+  width: 90%;
+  margin: 30px auto;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background: fixed top 95px right 0px url(../img/oranges.jpg) no-repeat,
+    fixed top 640px left 0px url(../img/spices.jpg) no-repeat;
+}
+h1 {
+  font-size: 2.2rem;
+}
+h2 {
+  font-family: "Pinyon Script", cursive;
+  color: #c89446;
+  font-weight: bold;
+  text-transform: none;
+  font-size: 1.8rem;
+  display:flex;
+  flex-direction: column;
+}
+h2:before{
+  content:"__";
+
+}
+h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+
+/*HEADER*/
+header {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.92),
+      rgba(54, 54, 54, 0.5) 39.24%,
+      rgba(28, 28, 28, 0.4)
+    ),
+    url(../img/eggs.jpg) center center / cover no-repeat;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 0;
+  margin-bottom: 5px;
+  position: relative;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header p {
+  color: white;
+}
+
+header a {
+  margin-bottom: 10px;
+  color: white;
+}
+header ul {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+header ul li {
+  margin: 0 7px;
+  border: 1px solid transparent;
+  padding: 3px;
+}
+
+header ul li:hover {
+  border: 1px solid #c89446;
+}
+header p {
+  margin-bottom: 30px;
+}
+
+/*PRESENTATION*/
+
+.presentation img {
+  border : 1px solid #c89446;
+  display : block;
+  margin : 15px auto;
+}
+
+.border {
+  width: 5%;
+  border-top: 1px solid #c89446;
+}
+.chickenimg {
+  height: auto;
+}
+/*MENU*/
+
+.menu {
+  text-align: center;
+}
+.menu ul {
+  display: flex;
+  justify-content: center;
+}
+.menu article{
+  display:flex;
+  margin:2rem 0 ;
+}
+.menutext{
+  margin-left:3rem;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.menutext p{
+  text-align: left;
+}
+span{
+  color:#c89446;
+  font-family: "Pinyon Script", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size:2rem
+}
+.menu ul li {
+  margin: 0px 5px;
+  border-bottom: 1px solid transparent;
+}
+
+.menu ul li:hover {
+  border-bottom: 1px solid #c89446;
+}
+.menu a {
+  color: #c89446;
+}
+
+
+/*Reservation*/
+.reservation{
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.92),
+    rgba(54, 54, 54, 0.5) 39.24%,
+    rgba(28, 28, 28, 0.4)
+  ),
+  url(../img/eggs.jpg) center center / cover no-repeat;
+  height:50vh;
+  text-align: center;
+  padding-top: 30px;
+}
+form{
+  display:flex;
+  flex-direction:column;
+}
+.reservation h3{
+  color:white
+}
+/* background: fixed top 95px right 0px url(../img/oranges.jpg) no-repeat, */
+
+/*ORDINATEUR*/
+@media (min-width: 768px) {
+  /*HEADER*/
+  nav {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+  }
+  nav a {
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+    margin-top: 3px;
+  }
+
+  /*Presentation*/
+  .presentation article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .presentationtext {
+    width: 45%;
+  }
+
+  .row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  /*MENUS*/
+  .menulist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+  }
+  .menulist article {
+    width: 40%;
+    display: flex;
+    margin-bottom: 50px;
+    z-index: 2;
+  }
+  .square {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border: 1px solid #c89446;
+    transform: translate(-50%, -260px) rotate(45deg);
+    left: 50%;
+    bottom: -50%;
+    z-index: 1;
+  }
+}
+
+
+/*CHIEF*/
+.chiefimg{
+  border: 1px solid #c89446;
+}
+
+.chief{
+  text-align: center;
+}
+
+.chief article{
+  text-align:left;
+}
+
+input,select{
+  background-color: transparent;
+  margin:0.5rem 0;
+  padding:0.5rem 0;
+  border:1px solid #6f6f6f;
+  color:#6f6f6f
+}

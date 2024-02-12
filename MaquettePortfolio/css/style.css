@@ -1,0 +1,238 @@
+/*GENERAL*/
+section{
+    margin: 2.5rem 0
+}
+.container{
+    width:90%;
+    margin:auto
+}
+a{
+    text-decoration:none;
+}
+i{
+    font-size:3.4rem;
+    color:#A296D2;
+
+}
+img{
+    max-width:100%;
+    margin:auto;
+}
+
+p{
+    line-height:1.8rem;
+    font-size:1.1rem;
+}
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    color:white;
+    background-color: #04020A;
+  }
+
+
+h1,h2,h3{
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+}
+
+h1{
+    font-size:2rem;
+}
+
+h2{
+    font-size:1.8rem;
+}
+
+h3{
+    font-size:1.5rem;
+}
+
+
+nav,
+footer{
+    background-color: #A296D2;
+}
+/*HEADER*/
+nav{
+    margin-bottom:2rem;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    align-items: center;
+}
+
+.profilpicture{
+    border:1px solid #3B2789;
+    border-radius:30px;
+}
+  
+  
+  .menu-list a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    display: block;
+    transition: background-color 0.3s;
+  }
+  
+  .menu-list a:hover {
+    background-color: #6848E0;
+  }
+
+/*Presentation*/
+.presentation{
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    margin:auto;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.5) 39.24%, rgba(28, 28, 28, 0.4)), 
+        url(../img/presentation.jpg) center center / cover no-repeat;
+    color: #FFF;
+}
+
+.presentationimg{
+display:none;
+
+}
+.imgcontainer{
+    width:45%;
+    height:100%;
+}
+
+.btn{
+    background-color:#6848E0;
+    color:#fff;
+    font-size:1.4rem;
+    font-weight:bold;
+    padding:1rem;
+    border:1px solid #6848E0;
+    border-radius:30px;
+    margin:1rem;
+}
+
+
+.competence{
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+}
+.competence h2{
+    width:100%;
+}
+
+/*Réalisation*/
+.realisation{
+    text-align: center;
+}
+
+.projet{
+    margin-top : 2rem;
+    margin-bottom : 2rem;
+}
+.card{
+    background-color: #110b28;
+    border:2px solid #6848E0;
+    text-align: center;
+    margin : 2rem;
+    display: flex;
+    flex-direction:column;
+}
+.mainstack{
+    font-size:5rem;
+}
+.projet{
+    width:80%;
+}
+/*CONTACT*/
+.contact{
+    text-align: center;
+}
+.contactways{
+    border:1px solid #6848E0;
+    padding: 2rem;
+    margin : 1rem;
+}
+.contact-way{
+    margin:2rem;
+}
+
+/*Footer*/
+footer a{
+    color:white;
+    
+}
+footer{
+    text-align: center;
+}
+
+@media (min-width:768px){
+
+    span{
+    color:#A296D2;
+    
+    }
+
+    h1 span{
+        background: linear-gradient(90deg, #3B2789, #A296D2, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Pour Safari */
+  background-clip: text;
+  color: transparent;
+}
+    
+    /*HEADER*/
+    nav{
+        flex-direction:row;
+    }
+    ul{
+        width:50%;
+        display:flex
+    }
+
+    .presentation{
+        flex-direction:row;
+        flex-wrap: wrap;
+        background:none;
+    }
+
+    .imgcontainer{
+        width:20%;
+    }
+    .presentationimg{
+        display:inline;
+    }
+    .presentationtext{
+        width:40%;
+    }
+
+    .realisations{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .realisations h2{
+        width:100%
+    }
+
+    .card{
+        width:40%;
+    }
+    .contact{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-around;
+    }
+    .contact h2{
+        width:100%;
+    }
+    .contactways{
+        width:40%;
+    }
+}
